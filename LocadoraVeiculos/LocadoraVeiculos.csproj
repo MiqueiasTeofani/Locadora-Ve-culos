@@ -200,6 +200,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811142021023_IdCliente.cs" />
+    <Compile Include="Migrations\201811142021023_IdCliente.Designer.cs">
+      <DependentUpon>201811142021023_IdCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811142052519_TipoUsuario.cs" />
+    <Compile Include="Migrations\201811142052519_TipoUsuario.Designer.cs">
+      <DependentUpon>201811142052519_TipoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811142053071_Tipo.cs" />
+    <Compile Include="Migrations\201811142053071_Tipo.Designer.cs">
+      <DependentUpon>201811142053071_Tipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -281,6 +294,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811142021023_IdCliente.resx">
+      <DependentUpon>201811142021023_IdCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811142052519_TipoUsuario.resx">
+      <DependentUpon>201811142052519_TipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811142053071_Tipo.resx">
+      <DependentUpon>201811142053071_Tipo.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

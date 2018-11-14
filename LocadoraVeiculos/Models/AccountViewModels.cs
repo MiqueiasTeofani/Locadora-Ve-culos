@@ -65,6 +65,10 @@ namespace LocadoraVeiculos.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "Nome")]
+        public string UserName { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
@@ -83,6 +87,8 @@ namespace LocadoraVeiculos.Models
 
     public class ResetPasswordViewModel
     {
+
+
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
